@@ -108,7 +108,6 @@ const routes = [
       rule: "user"
     }
   },
-  
   {
     path: "/quizzes",
     name: "quizzes",
@@ -155,6 +154,21 @@ const routes = [
     path: "/admin/sponsors/edit",
     name: "editSponsor",
     component: () => import("@/views/sponsors/EditSponsor.vue")
+  },
+  {
+    path: "/admin/experts",
+    name: "listExperts",
+    component: () => import("@/views/experts/ListExperts.vue")
+  },
+  {
+    path: "/admin/experts/add",
+    name: "addExpert",
+    component: () => import("@/views/experts/AddExpert.vue")
+  },
+  {
+    path: "/admin/experts/edit",
+    name: "editExpert",
+    component: () => import("@/views/experts/EditExpert.vue")
   },
   // Redirect to 404 page, if no match found
   {
