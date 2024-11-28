@@ -141,6 +141,21 @@ const routes = [
       rule: "user"
     }
   },
+  {
+    path: "/admin/sponsors",
+    name: "listSponsors",
+    component: () => import("@/views/sponsors/ListSponsors.vue")
+  },
+  {
+    path: "/admin/sponsors/add",
+    name: "addSponsor",
+    component: () => import("@/views/sponsors/AddSponsor.vue")
+  },
+  {
+    path: "/admin/sponsors/edit",
+    name: "editSponsor",
+    component: () => import("@/views/sponsors/EditSponsor.vue")
+  },
   // Redirect to 404 page, if no match found
   {
     path: "*",
