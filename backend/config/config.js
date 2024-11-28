@@ -6,7 +6,9 @@ module.exports = {
             question: 'questions',
             quiz: 'quizzes',
             user: 'users',
-            user_levels: "user_levels"
+            user_levels: "user_levels",
+            expert: 'experts',
+            sponsor: 'sponsors',
         }
     },
     auth: {
